@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Offer</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div class="bogo-container">
+        <fieldset>
+            <legend>YAY! It’s BOGO</legend>
+        </fieldset>
+        <div class="unit-container">
+            <!-- container first starts from here -->
+            <div class="option" id="container1" onclick="toggleContainer(1)">
+
+                <label for="unit1">
+                    <input type="radio" name="units" id="unit1">
+                    <div class="unit-label">
+                        <div>
+                            <span class="units-num">1 Unit</span>
+                            <span class="discount">10% Off</span>
+                        </div>
+                        <p>Standard Price</p>
+                    </div>
+                    <div class="price">
+                        <div class="discounted-price">$10.00 USD</div>
+                        <span class="original-price">$12.00 USD</span>
+                    </div>
+                </label>
+                <div class="details">
+                    <div class="option-header">
+                        <h3>Size</h3>
+                        <h3>Color</h3>
+                    </div>
+                    <div class="form-container">
+                        <div  class="form-row ">
+                            <label for="size1">#1</label>
+                            <div class="select-container">
+                                <select id="size1" name="size1">
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                </select>
+                            </div>
+                            <div class="select-container">
+                                <select id="color1" name="color1">
+                                    <option value="Black">Black</option>
+                                    <option value="Red">Red</option>
+                                    <option value="Blue">Blue</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="size2">#2</label>
+                            <div class="select-container">
+                                <select id="size2" name="size2">
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                </select>
+                            </div>
+                            <div class="select-container">
+                                <select id="color2" name="color2">
+                                    <option value="Black">Black</option>
+                                    <option value="Red">Red</option>
+                                    <option value="Blue">Blue</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- container seconds starts from here -->
+            <div class="option popular active" id="container2" id="container2" onclick="toggleContainer(2)" >
+                <img class="new-faature-container" src="./new-feature_img-removebg-preview.png">
+                
+                <label for="unit2">
+                    <input type="radio" name="units" id="unit2" checked>
+                    <div class="unit-label">
+                        <div>
+                            <span class="units-num">2 Unit</span>
+                            <span class="discount">20% Off</span>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span class="discounted-price">$18.00 USD</span><br>
+                        <span class="original-price">$24.00 USD </span>
+                    </div>
+                </label>
+                <div>
+
+<!-- the invisible details starts from here -->
+                    <div class="details">
+                        <div class="option-header">
+                            <h3>Size</h3>
+                            <h3>Color</h3>
+                        </div>
+                        <div class="form-container">
+                            <div class="form-row">
+                                <label for="size1">#1</label>
+                                <div class="select-container">
+                                    <select id="size1" name="size1">
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                    </select>
+                                </div>
+                                <div class="select-container">
+                                    <select id="color1" name="color1">
+                                        <option value="Black">Black</option>
+                                        <option value="Red">Red</option>
+                                        <option value="Blue">Blue</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <label for="size2">#2</label>
+                                <div class="select-container">
+                                    <select id="size2" name="size2">
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                    </select>
+                                </div>
+                                <div class="select-container">
+                                    <select id="color2" name="color2">
+                                        <option value="Black">Black</option>
+                                        <option value="Red">Red</option>
+                                        <option value="Blue">Blue</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+<!-- the container three starts from here -->
+            <div class="option" id="container3" onclick="toggleContainer(3)" >
+               
+                <label for="unit3">
+                    <input type="radio" name="units" id="unit3">
+                    <div class="unit-label">
+                        <div>
+                            <span style="margin-left: -55px;" class="units-num">3 Unit</span>
+                            <span class="discount30">30% Off</span>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span class="discounted-price">$24.00 USD</span><br>
+                        <span class="original-price">$24.00 USD </span>
+                    </div>
+                </label>
+                <div class="details">
+                    <div class="option-header">
+                        <h3>Size</h3>
+                        <h3>Color</h3>
+                    </div>
+                    <div class="form-container">
+                        <div class="form-row">
+                            <label for="size1">#1</label>
+                            <div class="select-container">
+                                <select id="size1" name="size1">
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                </select>
+                            </div>
+                            <div class="select-container">
+                                <select id="color1" name="color1">
+                                    <option value="Black">Black</option>
+                                    <option value="Red">Red</option>
+                                    <option value="Blue">Blue</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="size2">#2</label>
+                            <div class="select-container">
+                                <select id="size2" name="size2">
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                </select>
+                            </div>
+                            <div class="select-container">
+                                <select id="color2" name="color2">
+                                    <option value="Black">Black</option>
+                                    <option value="Red">Red</option>
+                                    <option value="Blue">Blue</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- the footer section starts from here -->
+        <div class="footer">
+            <span class="free-delivery">Free Delivery</span>
+            <div class="total">
+                <span>Total: </span>
+                <span class="total-price">$18.00 USD</span>
+            </div>
+        </div>
+
+        <button class="add-to-cart"><img class="plus" src="/Icon.png">&nbsp; Add to Cart</button>
+        <p class="poweredby">@ Powered by Pumper</p>
+    </div>
+</body>
+<script src="./script.js" >
+</script>
+
+</html>

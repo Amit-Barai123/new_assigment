@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expanding and Collapsing Containers</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.container {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.details {
+    display: none;
+    margin-top: 10px;
+}
+
+.container.active .details {
+    display: block;
+}
+
+.discount {
+    background-color: #ff5f7a;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.badge {
+    background-color: #ff5f7a;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.add-to-cart {
+    background-color: #ff5f7a;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-to-cart:hover {
+    background-color: #ff3b56;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.total {
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container" id="container1" onclick="toggleContainer(1)">
+        <div class="header">
+            <input type="radio" name="unit" value="1 Unit">
+            1 Unit <span class="discount">10% Off</span> 
+            <span class="price">$10.00 USD</span>
+        </div>
+        <div class="details">
+            <p>Standard Price: <span class="old-price">$24.00 USD</span></p>
+        </div>
+    </div>
+
+    <div class="container active" id="container2" onclick="toggleContainer(2)">
+        <div class="header">
+            <input type="radio" name="unit" value="2 Units">
+            2 Unit <span class="discount">20% Off</span> 
+            <span class="price">$18.00 USD</span> 
+            <span class="badge">Most Popular</span>
+        </div>
+        <div class="details">
+            <label>#1 Size: 
+                <select>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                </select>
+            </label>
+            <label>Colour:
+                <select>
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                </select>
+            </label>
+        </div>
+    </div>
+
+    <div class="container" id="container3" onclick="toggleContainer(3)">
+        <div class="header">
+            <input type="radio" name="unit" value="3 Units">
+            3 Unit <span class="discount">30% Off</span> 
+            <span class="price">$24.00 USD</span>
+        </div>
+        <div class="details">
+            <p>Standard Price: <span class="old-price">$48.00 USD</span></p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <button class="add-to-cart">+ Add to Cart</button>
+        <p>Total: <span class="total">$18.00 USD</span></p>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function toggleContainer(containerNumber) {
+    // Get all containers
+    const containers = document.querySelectorAll('.container');
+    
+    containers.forEach((container, index) => {
+        // Add active class to the clicked container and remove from others
+        if (index + 1 === containerNumber) {
+            container.classList.add('active');
+        } else {
+            container.classList.remove('active');
+        }
+    });
+}
+
+    </script>
+</body>
+</html>

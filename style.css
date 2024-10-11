@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family:"Inter";
+}
+
+body {
+background-color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.bogo-container {
+background-color: #fff;
+width: 462px;
+height: 603px;
+padding-left: 59px;
+padding-right: 59px;
+padding-top: 35px;
+padding-bottom: 35px;
+
+
+}
+/* the css for the header */
+legend {
+text-align: center;
+color: #FF6B82;
+font-family:Inter;
+font-size: 20px;
+font-weight: 600;
+padding-left:5px;
+padding-right: 5px;
+}
+
+fieldset {
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-top: 0.9px solid #C8C8C8;
+    height: 24px;
+}
+
+/* unit container starts from here */
+
+.unit-container {
+    width: 341px;
+height: 363.11px;
+margin-top: 20px;
+
+}
+
+.option {
+padding: 20px;
+margin-top: 20px;
+position: relative;
+width: 341px;
+border: 1px solid #C8C8C8;
+transition: all 0.3s ease;
+
+}
+
+
+/* css for custom radio button */
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 0.9px solid #DADADA;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="radio"]:checked::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #FF6B82;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left:2px ;
+}
+
+
+
+input[type="radio"]:checked {
+    border: 0.9px solid #FF6B82;
+}
+
+
+/* css for the choosing option */
+
+.option label {
+display: flex;
+justify-content: space-between;
+align-items: center;
+cursor: pointer;
+}
+
+.unit-label {
+    margin-left:-70px
+}
+
+.units-num {
+font-size: 14px;
+font-weight: bold;
+line-height: 16.94px;
+text-align: left;
+color: black;
+
+}
+
+
+.discount {
+color: white;
+background-color: #FF6B82;
+padding: 2px 6px;
+border-radius: 1px;
+font-size: 12px;
+font-weight: 300;
+margin-left: 8px;
+text-align: center;
+
+}
+
+.unit-label p {
+font-size: 12px;
+font-weight: 500;
+text-align: left;
+margin-top: 2.88px;
+color: black;
+
+}
+
+.discounted-price {
+    font-size: 14.46px;
+    font-weight: 600;
+    text-align: left;
+
+   
+    
+} 
+.discount30 {
+    color: white;
+background-color: #FF6B82;
+padding: 2px 6px;
+border-radius: 1px;
+font-family: Inter;
+font-size: 12px;
+font-weight: 400;
+margin-left: 10.77px;
+line-height: 14.52px;
+text-align: center;
+vertical-align: top;
+display:inline;
+margin-top: -12px;
+position: absolute;
+
+}
+.original-price {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12.1px;
+    text-align: left;
+    color: rgba(120, 120, 120, 0.554);
+    text-decoration: line-through;
+    vertical-align: text-top;
+    
+}
+
+/* css for the new feature tag */
+
+.new-faature-container {
+    position: absolute;
+    right:-3px;
+    top:-11px;
+    width: 140px;
+    
+}
+
+
+/* css for footer */
+.footer {
+display: flex;
+justify-content: space-between;
+margin-top: 14.89px;
+align-items: center;
+}
+
+.free-delivery {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+    text-align: left;
+    color: #FF6B82;
+}
+
+.total span {
+    font-size: 14px;
+    text-align: left;
+    font-weight:600;
+}
+
+
+
+.add-to-cart {
+    background: #FF6B82;
+color: white;
+padding: 10px;
+width: 100%;
+border: none;
+border-radius: 5px;
+margin-top: 20px;
+cursor: pointer;
+font-size: 16px;
+font-family: Inter;
+font-size: 12px;
+font-weight: 500;
+line-height: 14.52px;
+height: 40px;
+
+}
+
+.add-to-cart:hover {
+background-color: #e53770;
+}
+
+.plus {
+    height:12px;
+    width: 12px;
+    margin-right:5px;
+    vertical-align: middle;
+}
+.poweredby {
+font-size: 12px;
+font-style: italic;
+font-weight: 400;
+text-align: left;
+color: #00000066;
+text-align: right;
+margin-top: 5px;
+
+}
+/* css for the select box */
+
+
+.option-header {
+    display: flex;
+    width: 100px;
+    margin-left: 45px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.option-header h3 {
+font-size: 10px;
+font-weight: 500;
+text-align: left;
+
+}
+
+.form-row {
+    display: flex;
+    align-items: center; 
+}
+
+label {
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+/* css for the custom select box */
+
+
+select {
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    width: 66px;
+    height: 25px;
+    border-radius: 2px;
+    border: 1px solid #D9D9D9;
+    position: relative;
+    text-indent: 7px;
+}
+
+select:focus {
+    outline: none;
+    border: 1px solid #007bff;
+    box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+
+.select-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+
+
+.select-container:after {
+    content: '▼'; 
+    font-size: 8px;
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: 7px;
+    pointer-events: none; 
+    transform: translateY(-50%);
+  }
+
+  .custom-select::-ms-expand {
+    display: none;
+  }
+
+
+
+
+
+
+.form-row label {
+
+font-size: 10px;
+font-weight: 400;
+text-align: right;
+margin-left: 28px;
+margin-top: 8px;
+}
+
+/* for active class css is here */
+.option.active .details {
+    display: block;
+    transition: 0.3s ease;
+}
+
+.option.active {
+    border: 1px solid #FF6B82;
+    transition: 0.3s ease;
+    background-color: #FFF9FA;
+    ;
+}
+
+.details {
+    display: none;
+}
+
